@@ -51,11 +51,11 @@ header{
     display:flex;
     justify-content: space-between;
 }
-.navigation-items{
+.navigation-list{
     display:flex;
     font-size: 20px ;
 }
-.navigation-items li:not(:nth-child(3)){
+.navigation-list li:not(:nth-child(3)){
     margin-right:34px;
 }
 .navigation-item:hover{
@@ -329,7 +329,7 @@ header{
     width:600px;
     height: 60px;
 }
-input[type="e-mail"] {
+input[type="email"] {
     display: block;
     width: 100%;
     height:100%;

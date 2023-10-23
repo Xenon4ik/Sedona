@@ -9,18 +9,20 @@
 </head>
 <body>
     <header>
+        <h2 class="visually-hiden">Навигация по сайту</h2>
         <div class="navigation-wrapper">
-            <div class="logo"><img src="img/logo.svg" alt="logo"></div>
-            <navigation>
-                <ul class="navigation-items">
-                    <li calss="navigation-item"><a href="#">Главная</a></li>
+            <div class="logo"><img src="img/logo.svg" alt="Логотип Седоны"></div>
+            <nav>
+                <ul class="navigation-list">
+                    <li calss="navigation-item"><a href="index.html">Главная</a></li>
                     <li calss="navigation-item"><a href="#">О Седоне</a></li>
-                    <li calss="navigation-item"><a href="#">Гостиницы</a></li>
+                    <li calss="navigation-item"><a href="second-page.html">Гостиницы</a></li>
                 </ul>
-            </navigation>
+            </nav>
+            <!-- По хорошему надо было сделать списком -->
             <div class="navigatiom-icons">
-                <div class="nav search"></div>
-                <div class="nav like"><div class="green-circle"><span class="count">12</span></div></div>
+                <div class="nav search"><span class="visually-hiden">Поиск</span></div>
+                <div class="nav like"><div class="green-circle"><span class="visually-hiden">Понравившиеся</span><span class="count">12</span></div></div>
                 <button class="click-to-book">Хочу сюда!</button>
             </div>
          </div>
@@ -28,14 +30,16 @@
     <main>
         <h1 class="visually-hiden">Сайт гостиницы Седоны</h1>
         <div class="bg-main"></div>
-        <div class="sedona-description-wrapper">
+        <section class="sedona-description-wrapper">
+            <h2 class="visually-hiden">Описание Седоны</h2>
             <div class="sedona-description">
                 <p class="sedona-description-p">Седона — небольшой городок в Аризоне,
                     заслуживающий большего!</p>
                 <p class="reasons"> Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
             </div>
-        </div>
-        <div class="sedona-advantages">
+        </section>
+        <section class="sedona-advantages">
+            <h2 class="visually-hiden">Приемущества Седоны</h2>
             <div class="reason-1">
                 <div class="text-position">
                 <p class="reason-name">Настоящий городок</p>
@@ -92,15 +96,16 @@
                 <p class="reason-description">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
             </div>
-        </div>
-        <div class="booking">
+        </section>
+        <section class="booking">
             <div class="booking-wrapper">
                 <p class="booking-title">Заинтересовались?</p>
                 <p class="booking-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <button class="search-hotels">поиск гостиницы в седоне</button>
             </div>
-        </div>
-        <div class="mailing">
+        </section>
+        <section class="mailing">
+            <h2 class="visually-hiden">Подписка на рассылку полезной информации</h2>
             <div class="mailing-wrapper">
             <p class="mailimg-title">Подпишитесь на рассылку</p>
             <p class="mailing-text">Только полезная информация и никакого спама,<br>
@@ -108,23 +113,23 @@
             <form class="e-mail-form">
                 <div class="e-mail-wrapper">
                 <label>
-                    <input type="e-mail" name="e-mail" placeholder="Ваш e-mail">
+                    <input type="email" name="e-mail" placeholder="Ваш e-mail">
                  </label>
                  </div>
                 <button class="mailing-submit" type="submit">подписаться</button>
             </form>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer-wrapper">
             <div class="icons-wrapper">
-                <span class="twiter"><a href="#"></a></span>
-                <span class="facebook"><a href="#"></a></span>
-                <span class="youtube"><a href="#"></a></span>
+                <span class="twiter"><a href="https://www.facebook.com/htmlacademy"></a></span>
+                <span class="facebook"><a href="https://twitter.com/htmlacademy_ru"></a></span>
+                <span class="youtube"><a href="https://www.youtube.com/c/HTMLAcademyRUS"></a></span>
             </div>
             <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <span class="academy-logo"></span>
+            <span class="academy-logo"><a href=" https://htmlacademy.ru/"></a></span>
          </div>
     </footer>
 </body>
